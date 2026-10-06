@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nifti-lite"
+version = "0.1.0"
+description = "A small, from-scratch NIfTI reader and fast dataset header scanner."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy"]
+
+[project.scripts]
+nifti-lite = "nifti_lite:main"
+
+[tool.setuptools]
+py-modules = ["nifti_lite"]
